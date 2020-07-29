@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0dip" android:text="@string/software_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center|top" />
+        <TextView android:textSize="22.0dip" android:id="@+id/id_version_check" android:layout_width="wrap_content" android:layout_height="wrap_content"  />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center|bottom" >
+        <Button android:textSize="25.0dip" android:id="@+id/version_check_bt_ok" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Success"  android:layout_alignParentBottom="true" 
+        		android:layout_alignParentLeft="true" />
+        <Button android:textSize="25.0dip" android:id="@+id/version_check_bt_failed" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Failed"  android:layout_alignParentBottom="true" 
+        		android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

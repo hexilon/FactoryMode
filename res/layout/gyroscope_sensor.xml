@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_alignParentTop="true">
+	
+	    <!-- <ImageView
+	        android:id="@id/gsensor_iv_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/error" />
+	 	-->
+	    <TextView
+	        android:id="@+id/gyroscope_result_x"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/Green"
+	        android:text="@string/x_result"
+	        android:textSize="20.0dip" />
+	    <TextView
+	        android:id="@+id/gyroscope_result_y"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/Green"
+	        android:text="@string/y_result"
+	        android:textSize="20.0dip" />
+	    <TextView
+	        android:id="@+id/gyroscope_result_z"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/Green"
+	        android:text="@string/z_result"
+	        android:textSize="20.0dip" />
+	
+	    <TextView
+	        android:id="@+id/gyr_x"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/x_coordinate"
+	        android:textColor="@color/Green"
+	        android:textSize="20.0dip"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/gyr_y"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/y_coordinate"
+	        android:textColor="@color/Green"
+	        android:textSize="20.0dip"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/gyr_z"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/z_coordinate"
+	        android:textColor="@color/Green"
+	        android:textSize="20.0dip"
+	        android:textStyle="bold" />
+		</LinearLayout>
+	        
+	
+	    <Button
+	            android:id="@id/gsensor_bt_ok"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:background="#ff00ff00"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:text="@string/Success"
+	            android:textSize="25.0dip" />
+	
+	     <Button
+	            android:id="@id/gsensor_bt_failed"
+	            android:layout_width="100dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_height="100dp"
+	            android:background="#ffff0000"
+	            android:text="@string/Failed"
+	            android:textSize="25.0dip" />
+	
+	
+</RelativeLayout>

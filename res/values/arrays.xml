@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>成功</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="flash_cid_numbers_index" translatable="false">
+        <item>90014A483847316505</item>
+        <item>150100513758534142</item>
+        <item>150100523832314D42</item>
+        <item>150100463558354342</item>
+        <item>90014A484147346132</item>
+        <item>90014A484147326505</item>
+        <item>90014A484247346505</item>
+        <item>90014A484247346505</item>
+        <item>15010052345A314142</item>
+        <item>150100523758314D42</item>
+        <item>150100523331314D42</item>
+        <item>150100523331424D42</item>
+        <item>150100513858534142</item>
+        <item>150100523231424D42</item>
+        <item>110100303136473730</item>
+        <item>110100303136473332</item>
+        <item>90014A484147346404</item>
+        <item>150100464E31324D42</item>
+        <item>150100514E31364D42</item>
+		<item>8801034E4361726420119C01112293CF</item>
+		<item>8801034E4361726420203728e12f1405</item>
+		<item>8801034E436172642011a007c5227371</item>
+        <item>88888</item>
+        <item>88888</item>
+        <item>88888</item>
+        <item>88888</item>
+    </string-array>
+    
+    <string-array name="flash_namestr_index" translatable="false">
+        <item>@string/h9tq64a8gtmcur_kum</item>
+        <item>@string/kmq7x000sa_b315</item>
+        <item>@string/kmr820001m_b609</item>
+        <item>@string/kmf5x0005c_b211</item>
+        <item>@string/h9tq17abjtacur_kum</item>
+        <item>@string/h9tq17abjtmcur_kum</item>
+        <item>@string/h9tq26abjtmcur_kum</item>
+        <item>@string/h9tq26adftmcur_kum</item>
+        <item>@string/kmr4z0001a_b803</item>
+        <item>@string/kmr7x0001m_b511</item>
+        <item>@string/kmr310001m_b611</item>
+        <item>@string/kmr31000bm_b611</item>
+        <item>@string/kmq8x000sa_b414</item>
+        <item>@string/kmr21000bm_b809</item>
+        <item>@string/tye0hh221657ra</item>
+        <item>@string/tye0hh231659ra</item>
+        <item>@string/h9tq18abjtmcur_ktm</item>
+        <item>@string/kmfn10012m_b214</item>
+        <item>@string/kmqn10006m_b318</item>
+		<item>@string/k4p8g304eq_agc2_1</item>
+		<item>@string/k4p8g304eq_agc2_2</item>
+		<item>@string/k4p8g304eq_agc2_3</item>
+        <item>@string/unknownflash</item>
+        <item>@string/unknownflash</item>
+        <item>@string/unknownflash</item>
+        <item>@string/unknownflash</item>
+    </string-array>
+</resources>

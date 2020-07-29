@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button android:textSize="30.0sp" android:id="@+id/fm_search" android:layout_width="fill_parent" android:layout_height="100.0dip" android:text="@string/Search" />
+    <Button android:textSize="30.0sp" android:id="@+id/fm_success" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/Success" android:layout_weight="1.0" android:background="#ff00ff00"/>
+    <Button android:textSize="30.0sp" android:id="@+id/fm_fail" android:layout_width="fill_parent" android:layout_height="100.0dip" android:text="@string/Failed" android:background="#ffff0000"/>  
+
+</LinearLayout>

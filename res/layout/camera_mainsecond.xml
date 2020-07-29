@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView
+			android:layout_height="100dip"
+			android:id="@+id/txt_value_second"
+			android:layout_width="match_parent"
+			android:textSize="20.0dip" 
+			android:gravity="center"/>
+			
+        <Button 
+            android:textSize="25.0dip" 
+            android:id="@+id/second_bt_ok" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="@string/Success" 
+            android:layout_weight="0.8" 
+            android:background="#ff00ff00"/>
+            
+        <Button android:textSize="25.0dip" 
+            android:id="@+id/second_bt_failed" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="@string/Failed" 
+            android:layout_weight="0.2" 
+            android:background="#ffff0000"/>
+            
+    </LinearLayout>
+</LinearLayout>

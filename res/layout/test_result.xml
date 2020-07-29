@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="25.0dip" android:id="@+id/Button_Fail" android:background="@drawable/bk_fail" android:layout_width="wrap_content" android:layout_height="250.0dip" android:text="@string/Failed" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <Button android:textSize="25.0dip" android:id="@+id/Button_Success" android:background="@drawable/bk_true" android:layout_width="fill_parent" android:layout_height="250.0dip" android:text="@string/Success" android:layout_above="@id/Button_Fail" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

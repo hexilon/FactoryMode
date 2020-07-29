@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.factorymode"
+android:sharedUserId="android.uid.system"
+    android:versionCode="1" 
+    android:versionName="1.0">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DIAGNOSTIC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    
+    <application android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".FactoryModeEntry" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mediatek.factorymode.VersionPa"
+            android:label="Version" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/AgingTest" android:name=".agingtest.AgingTestBegin" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+		        android:label="@string/nfctest" 
+		        android:name="com.mediatek.factorymode.nfctest.nfctest" 
+		        android:screenOrientation="portrait" />
+		    
+        <service android:name="com.mediatek.factorymode.wifi.wifiStateListener" />
+        <activity android:label="@string/SingleTest" android:name=".FactoryMode" android:screenOrientation="portrait" />
+        <activity android:label="@string/AutoTest" android:name=".AutoTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/AllTest" android:name=".AllTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/HeadSet" android:name=".headset.HeadSet" android:screenOrientation="portrait" />
+        <activity android:label="@string/GPS" android:name=".gps.GPS" android:screenOrientation="portrait" />
+        <activity android:label="@string/GPS" android:name=".gps.YGPS" android:screenOrientation="portrait" />
+        <activity android:label="@string/Vibrator" android:name=".vibrator.Vibrator" android:screenOrientation="portrait" />
+        <activity android:label="@string/Signal" android:name=".signal.Signal" android:screenOrientation="portrait" />
+        <activity android:label="@string/BatteryLog" android:name=".BatteryLog" android:screenOrientation="portrait" />
+        <activity android:label="@string/calibration" android:name=".calibration.Calibration" android:screenOrientation="portrait" />
+        <activity android:label="@string/TouchScreen" android:name=".touchscreen.TouchScreenHandWriting" android:screenOrientation="portrait" />
+        <activity android:label="@string/PointTest" android:name=".touchscreen.PointTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/LineTest" android:name=".touchscreen.LineTest" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="@string/BackLight" android:name=".backlight.BackLight" android:screenOrientation="portrait" />
+        <activity android:label="@string/Memory" android:name=".memory.Memory" android:screenOrientation="portrait" />
+        <activity android:label="@string/microphone_name" android:name=".microphone.MicRecorder" android:screenOrientation="portrait" />        
+		<activity android:label="@string/microphone_namesub" android:name=".microphone.MicRecordersub" android:screenOrientation="portrait" />
+        <activity android:label="@string/Audio" android:name=".audio.AudioTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/Camera" android:name=".camera.CameraTest" android:taskAffinity="android.task.camera" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/Camera" android:name=".camera.SubCamera" android:taskAffinity="android.task.camera" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/second_maincamera" android:name=".camera.CameraSecond" android:taskAffinity="android.task.camera" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:exported="true"/>
+        <activity android:label="@string/WiFi" android:name=".wifi.WiFiTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/Bluetooth" android:name="com.mediatek.factorymode.bluetooth.Bluetooth" android:screenOrientation="portrait" />
+        <activity android:label="@string/GSensor" android:name="com.mediatek.factorymode.sensor.GSensor" android:screenOrientation="portrait" />
+        <activity android:label="@string/MSensor" android:name="com.mediatek.factorymode.sensor.MSensor" android:screenOrientation="portrait" />
+        <activity android:label="@string/LSensor" android:name="com.mediatek.factorymode.sensor.LSensor" android:screenOrientation="portrait" />
+        <activity android:label="@string/psensor_app_name" android:name="com.mediatek.factorymode.sensor.PSensor" android:screenOrientation="portrait" />
+        <activity android:label="@string/Earphone" android:name="com.mediatek.factorymode.earphone.Earphone" android:screenOrientation="portrait" />
+        <activity android:label="@string/sdcard" android:name="com.mediatek.factorymode.sdcard.SDCard" android:screenOrientation="portrait" />
+        <activity android:label="@string/FMRadio" android:name="com.mediatek.factorymode.fmradio.FMRadio" android:screenOrientation="portrait" />
+        <activity android:label="@string/KeyCode" android:name="com.mediatek.factorymode.KeyCode" android:screenOrientation="portrait" />
+        <activity android:label="@string/LCD" android:name="com.mediatek.factorymode.lcd.LCD" android:screenOrientation="portrait" />
+        <activity android:label="@string/SimCard" android:name="com.mediatek.factorymode.simcard.SimCard" android:screenOrientation="portrait" />
+        <activity android:label="@string/Report" android:name="com.mediatek.factorymode.Report" android:screenOrientation="portrait" />
+        <activity android:label="@string/led_name" android:name="com.mediatek.factorymode.led.Led" android:screenOrientation="portrait" />
+		<activity android:label="@string/led_prev_name" android:name="com.mediatek.factorymode.led.LedPrev" android:screenOrientation="portrait" />
+        <activity android:label="@string/AgingTest" android:name="com.mediatek.factorymode.agingtest.AgingTestMain" android:screenOrientation="portrait" />
+        <activity android:label="@string/AgingTest" android:name="com.android.agingtest.AgingTest" android:screenOrientation="portrait" />
+        <activity android:label="@string/version_information" android:name="com.mediatek.factorymode.version.Version" android:screenOrientation="portrait" android:exported="true"/>
+        <activity android:label="@string/bg_touch_name" android:name="com.mediatek.factorymode.touchscreen.BGTouch" android:screenOrientation="portrait" />
+		<activity android:label="@string/gyroscope" android:name="com.mediatek.factorymode.sensor.GyroscopeSensor" android:screenOrientation="portrait" />
+		<activity android:label="@string/fingerprint" android:name="com.mediatek.factorymode.fingerprint.fingerprint" android:screenOrientation="portrait" />
+		
+		<activity android:label="@string/otg" android:name="com.mediatek.factorymode.otg.otg" android:screenOrientation="portrait" />
+        <activity android:label="@string/factory_name" android:name="com.mediatek.factorymode.factoryreset.FactoryReset" android:screenOrientation="portrait" />
+		<activity android:label="@string/LCD" android:name="com.mediatek.factorymode.lcd.result" android:screenOrientation="portrait" />
+		<activity android:label="@string/TeeInformation" android:name="com.mediatek.factorymode.TeeInformation" android:screenOrientation="portrait" />
+		<activity android:label="@string/HardwareInformation" android:name="com.mediatek.factorymode.HardwareInformation" android:screenOrientation="portrait" />
+		<activity android:label="@string/hall" android:name="com.mediatek.factorymode.hall.hall" android:screenOrientation="portrait" />
+
+		<receiver android:name=".FactoryModeReceiver"
+				android:exported="true">
+            <intent-filter>
+                 <action android:name="android.provider.Telephony.SECRET_CODE" />
+                 <data android:scheme="android_secret_code" android:host="65" />
+                 <data android:scheme="android_secret_code" android:host="66" />
+                 <data android:scheme="android_secret_code" android:host="67" />
+                 <data android:scheme="android_secret_code" android:host="07" />
+                 <data android:scheme="android_secret_code" android:host="0412" />
+                 <data android:scheme="android_secret_code" android:host="0901" />
+            </intent-filter>
+		</receiver>
+
+
+        <!-- AgingTest start -->
+        <activity
+            android:name="com.mediatek.agingtest.AgingTestEntry"
+            android:label="@string/aging_test_app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mediatek.agingtest.SettingsActivity"
+            android:label="@string/setting_activity_title"
+            android:windowSoftInputMode="adjustPan|stateVisible"
+            android:screenOrientation="portrait"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mediatek.agingtest.ReportActivity"
+            android:label="@string/report_activity_title"
+            android:screenOrientation="portrait"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.RebootActivity"
+            android:label="@string/reboot_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.SleepActivity"
+            android:label="@string/sleep_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.VibrateActivity"
+            android:label="@string/vibrate_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.ReceiverActivity"
+            android:label="@string/receiver_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.FrontTakingPictureActivity"
+            android:label="@string/taking_picture_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.BackTakingPictureActivity"
+            android:label="@string/taking_picture_test_title"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.mediatek.agingtest.test.PlayVideoActivity"
+            android:label="@string/play_video_test_title"
+            android:screenOrientation="landscape"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <receiver 
+            android:name="com.mediatek.agingtest.BootCompletedReceiver" >
+            
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data
+                    android:host="@string/aging_test_secret_code"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        <!-- AgingTest end -->
+		
+    </application>
+    <!-- AgingTest start -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <!-- AgingTest end -->
+
+ <uses-feature android:name="android.hardware.camera" />
+ <uses-feature android:name="android.hardware.camera.autofocus" />
+ <uses-feature android:name="android.hardware.camera.flash" />
+ <uses-feature android:name="android.hardware.nfc" android:required="true" />
+ <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26" />
+</manifest>
+

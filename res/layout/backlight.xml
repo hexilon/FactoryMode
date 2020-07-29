@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/Display_lcd_on" android:layout_width="wrap_content" android:layout_height="100.0dip" android:text="@string/LCD_increase" android:layout_weight="0.5" />
+        <Button android:id="@+id/Display_lcd_off" android:layout_width="wrap_content" android:layout_height="100.0dip" android:text="@string/LCD_weaken" android:layout_weight="0.5" />
+    </LinearLayout>
+	 <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_level" android:textSize="20.0dip" />
+         <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:id="@+id/text_level"  android:textSize="20.0dip" />
+    </LinearLayout>
+	  <TextView  android:layout_width="fill_parent" android:layout_height="300dp"  android:background="#00ff00" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center|bottom" >
+        <Button android:textSize="25.0dip" android:id="@id/display_bt_ok" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Success" android:layout_alignParentBottom="true" 
+        		android:layout_alignParentLeft="true" />
+        <Button android:textSize="25.0dip" android:id="@id/display_bt_failed" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Failed" android:layout_alignParentBottom="true" 
+        		android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

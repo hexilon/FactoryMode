@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<TextView android:textSize="20.0dip" android:textColor="@color/Green" android:layout_gravity="center_horizontal" android:id="@id/keycode_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/KeyCode_info" /> -->
+    <!-- <GridView android:gravity="center" android:id="@id/keycode_grid" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:columnWidth="50.0dip" android:numColumns="auto_fit" /> -->
+   <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50dp" android:layout_marginTop="50dp">
+    		<Button  android:id="@+id/Menu"  
+    				 android:layout_width="100dp"
+    				 android:layout_height="wrap_content"
+    				 android:text="@string/Menu" />
+   		 <Button  android:id="@+id/Back"  
+    				 android:layout_width="100dp"
+    				 android:layout_height="wrap_content"
+    				 android:text="@string/Back" />
+    	<Button  android:id="@+id/Home"  
+    				 android:layout_width="100dp"
+    				 android:layout_height="wrap_content"    				 
+    				 android:text="@string/Home" />
+  </LinearLayout>
+  <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50dp">
+   			<Button  android:id="@+id/Volume1"  
+    				 android:layout_width="100dp"
+    				 android:layout_height="wrap_content"
+    				 android:text="@string/Volume1" />
+   			<Button  android:id="@+id/Volume2"  
+    				 android:layout_width="100dp"
+    				 android:layout_height="wrap_content"
+    				 android:text="@string/Volume2" />
+    </LinearLayout> 
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="25.0dip" 
+        		android:id="@id/keycode_bt_failed" 
+        		android:layout_width="140dp" 
+        		android:layout_height="80dp" 
+        		android:text="@string/Failed" 
+        		android:layout_alignParentBottom="true" 
+				android:layout_alignParentRight="true"
+        		/>
+        <Button android:textSize="25.0dip" 
+        			android:id="@id/keycode_bt_ok" 
+        			android:layout_width="140dp" 
+        			android:layout_height="80dp" 
+        			android:text="@string/Success"
+        			android:layout_alignParentBottom="true" 
+        			android:layout_alignParentLeft="true"
+        			/>
+    </RelativeLayout>
+</LinearLayout>

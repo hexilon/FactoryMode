@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    > 
+    
+<Button   
+    android:id="@+id/fmButton1" 
+    android:text="@string/AllTest" 
+    android:textSize="25dp"
+    android:layout_width="fill_parent" 
+    android:layout_marginTop="50dp"  
+    android:layout_height="95dp"   
+    /> 
+<Button   
+    android:id="@+id/fmButton2" 
+    android:text="@string/SingleTest" 
+    android:textSize="25dp"
+    android:layout_width="fill_parent"   
+    android:layout_marginTop="20dp"  
+    android:layout_height="95dp"  
+    /> 
+<Button   
+    android:id="@+id/fmButton3" 
+    android:text="@string/AgingTest" 
+    android:textSize="25dp"
+    android:layout_width="fill_parent"   
+    android:layout_marginTop="20dp"  
+    android:layout_height="95dp"   
+    /> 
+<Button   
+    android:id="@+id/fmButton4" 
+    android:text="@string/FactoryReset" 
+    android:textSize="25dp"
+    android:layout_width="fill_parent"   
+    android:layout_marginTop="20dp"  
+    android:layout_height="95dp" 
+    />     
+</LinearLayout> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/Green" android:id="@id/gsensor_tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GSensor_info" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/Green" android:id="@id/xcoor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x_coordinate" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/Green" android:id="@id/ycoor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/y_coordinate" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/Green" android:id="@id/zcoor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/z_coordinate" />
+     <ImageView android:layout_gravity="center" android:id="@id/gsensor_iv_img" android:background="@drawable/error" android:layout_width="80dp" android:layout_height="80dp" />
+     <RelativeLayout android:layout_width="fill_parent" android:layout_height="160dp" android:layout_gravity="center" >
+     	<ImageView  android:id="@+id/gsensor_iv_img0" android:background="@drawable/gsensor_z" android:layout_width="80dp" android:layout_height="64dp" android:layout_centerHorizontal="true"  android:layout_centerVertical="true"/>
+     	<ImageView  android:visibility="invisible" android:id="@+id/gsensor_iv_img1" android:background="@drawable/gsensor_h" android:layout_width="80dp" android:layout_height="64dp"  android:layout_above="@id/gsensor_iv_img0" android:layout_centerHorizontal="true"  />
+     	<ImageView  android:visibility="invisible" android:id="@+id/gsensor_iv_img2" android:background="@drawable/gsensor_x" android:layout_width="80dp" android:layout_height="64dp" android:layout_toLeftOf="@id/gsensor_iv_img0" android:layout_centerVertical="true"/>
+     	<ImageView  android:visibility="invisible" android:id="@+id/gsensor_iv_img3" android:background="@drawable/gsensor_x_2" android:layout_width="80dp" android:layout_height="64dp" android:layout_toRightOf="@id/gsensor_iv_img0" android:layout_centerVertical="true" />
+     	<ImageView android:visibility="invisible" android:id="@+id/gsensor_iv_img4" android:background="@drawable/gsensor_y" android:layout_width="80dp" android:layout_height="64dp"  android:layout_below ="@id/gsensor_iv_img0" android:layout_centerHorizontal="true" />
+     </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center|bottom" >
+        <Button android:textSize="25.0dip" android:id="@id/gsensor_bt_ok" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Success" android:layout_alignParentBottom="true" 
+     android:layout_alignParentLeft="true" />
+        <Button android:textSize="25.0dip" android:id="@id/gsensor_bt_failed" android:layout_width="140dp" android:layout_height="80dp" android:text="@string/Failed"  android:layout_alignParentBottom="true" 
+    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
